@@ -1,5 +1,5 @@
 ## QUESTION 1
-
+require 'pry'
 pokemon = [
   {
     "id": 1,
@@ -34,7 +34,7 @@ pokemon = [
           "slot": 3,
           "ability": {
               "name": "fire",
-              "url": "http://pokeapi.co/api/v2/ability/38/"
+              "url": "http://pokeapi.co/api/v2/ability/38"
           }
       }
   ]
@@ -67,3 +67,16 @@ pokemon = [
 # How would you return an array of all of the pokemon's names?
 # How would you determine whether or not the pokemon array contained any pokemon with a weight greater than 60?
 #  whatever method you use should return true if there are any such pokemon, false if not.
+
+
+
+def find_ability(name)
+    pokemon.each do |k, v|
+        if k[:name] == name
+
+        end
+        binding.pry
+    end
+end
+
+find_ability("bulbasaur")
